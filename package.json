@@ -1,25 +1,16 @@
 {
-  "name": "cinema-plus",
+  "name": "comflix",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1 align=\"center\"> Cinema + </h1> <p align=\"center\"> MongoDB, Expressjs, React/Redux, Nodejs </p>",
   "main": "server/src/index.js",
   "scripts": {
-    "client": "cd client && npm install && npm run start",
-    "server": "cd server && npm install && npm run dev",
-    "start": "cd server && npm install && npm run start",
+    "client": "cd client &&  npm run start",
+    "server": "cd server && npm run dev",
+    "start": "cd server && npm run start",
     "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/georgesimos/cinema-plus.git"
-  },
   "keywords": [],
-  "author": "George Simos <georgesimos.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/georgesimos/cinema-plus/issues"
-  },
-  "homepage": "https://github.com/georgesimos/cinema-plus#readme",
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -33,5 +24,18 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1"
-  }
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgesimos/cinema-plus.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/georgesimos/cinema-plus/issues"
+  },
+  "homepage": "https://github.com/georgesimos/cinema-plus#readme"
 }

@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path');
+// eslint-disable-next-line import/no-extraneous-dependencies
+const dotenv = require('dotenv');
 
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config({ path: path.join(__dirname, '../.env') });
-}
+dotenv.config({ path: './.env' });
 
 require('./db/mongoose');
 
@@ -54,6 +54,6 @@ app.use(invitationsRouter);
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname + '../../client/build/index.html'));
+  res.sendFile(path.join(`${__dirname}../../client/build/index.html`));
 });
 app.listen(port, () => console.log(`app is running in PORT: ${port}`));

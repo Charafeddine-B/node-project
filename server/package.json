@@ -1,14 +1,14 @@
 {
-  "name": "movie-plus-server",
+  "name": "comflix",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "database": "/Users/georgesimos/mongodb/bin/mongod --dbpath=/Users/georgesimos//mongodb-data"
+    "dev": "nodemon src/index.js"
+   
   },
-  "author": "George Simos <georgesimos.com>",
+
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -20,9 +20,10 @@
     "nodemailer": "^6.3.1",
     "nodemon": "^1.18.11",
     "qrcode": "^1.4.4",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    
   }
 }

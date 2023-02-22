@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const express = require('express');
 const auth = require('../middlewares/auth');
 const upload = require('../utils/multer');
@@ -88,7 +89,8 @@ router.put('/movies/:id', auth.enhance, async (req, res) => {
 
   try {
     const movie = await Movie.findById(_id);
-    updates.forEach((update) => (movie[update] = req.body[update]));
+    // eslint-disable-next-line no-return-assign
+    updates.forEach(update => (movie[update] = req.body[update]));
     await movie.save();
     return !movie ? res.sendStatus(404) : res.send(movie);
   } catch (e) {
